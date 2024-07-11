@@ -8,7 +8,7 @@ def pi_approx(n: int) -> float:
 
 
 if __name__ == "__main__":
-    n = 100000000000
+    n = 2**26
     pi = pi_approx(n)
     print(f"After {n} iterations, pi ~= {pi}")
 
