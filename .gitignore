@@ -1,0 +1,4 @@
+# Python files
+.venv/*
+*.pyc
+
