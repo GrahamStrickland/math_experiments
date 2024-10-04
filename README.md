@@ -1,6 +1,6 @@
 # math_experiments
 
-Python3.11 code for mathematical experiments
+Python3.12 code for mathematical experiments
 
 ## shanks_bot
 Matt Parker's method of finding the period of the reciprocal of any prime number, 
