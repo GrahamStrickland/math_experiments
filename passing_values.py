@@ -17,6 +17,9 @@ class DataStructure:
     def print_data(self) -> None:
         print(self.data)
 
+    def reset_data(self) -> None:
+        self.data = Data(string_data="yes?", numeric_data=1)
+
 
 def main() -> None:
     print("-" * 84)
@@ -36,6 +39,17 @@ def main() -> None:
 
     data.string_data = "nothing"
     data.numeric_data = 9.87654321
+
+    print("-" * 84)
+    print("After changing data:")
+    print("-" * 84)
+    print("data_structure.data = ", end="")
+    data_structure.print_data()
+    print("data = ", end="")
+    print(data)
+    print("-" * 84)
+
+    data_structure.reset_data()
 
     print("-" * 84)
     print("After changing data:")
