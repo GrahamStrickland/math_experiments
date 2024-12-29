@@ -18,7 +18,7 @@ def plot_sequence(a: float, b: float, max_n: int) -> None:
     nums = [x_n(a, b, n) for n in range(1, max_n)]
 
     plt.figure(figsize=(8, 2))
-    plt.scatter(nums, [0] * len(nums), color="blue", s=10)
+    plt.scatter(nums, [0] * len(nums), marker=".", color="blue")
     plt.yticks([])
     plt.xlabel("Values")
     plt.title(

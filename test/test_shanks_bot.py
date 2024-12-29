@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from shanks_bot import shanks_bot
+from src.shanks_bot import shanks_bot
 
 
 def test_shanks_bot() -> None:
