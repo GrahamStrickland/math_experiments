@@ -8,7 +8,7 @@ from src.shanks_bot import shanks_bot
     "input, expected",
     [
         (7, 6),
-        (23, 20),
+        (23, 22),
         (60013, 5001),
         (60017, 60016),
         (61141, 12228),

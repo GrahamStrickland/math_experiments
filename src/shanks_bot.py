@@ -3,23 +3,19 @@
 
 def shanks_bot(p: int) -> int:
     """Given a prime number p, return the period of its reciprocal."""
-    dividend = 1
-    divisor = p
-    dividends: list[int] = []
+    assert p > 1
 
-    while len(dividends) < p - 1:
-        while divisor > dividend:
-            dividend *= 10
+    remainder = 1
+    remainders = {}
 
-        while divisor + p < dividend:
-            divisor += p
+    step = 0
+    while remainder != 0:
+        if remainder in remainders:
+            return step - remainders[remainder]
 
-        if dividend in dividends:
-            break
-        else:
-            dividends.append(dividend)
+        remainders[remainder] = step
 
-        dividend -= divisor
-        divisor = p
+        remainder = (remainder * 10) % p
+        step += 1
 
-    return len(dividends)
+    return 0
