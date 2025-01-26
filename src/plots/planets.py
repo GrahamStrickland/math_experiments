@@ -4,9 +4,8 @@ import time
 
 import matplotlib.pyplot as plt
 import numpy as np
-from astropy import units as u
-
 import rebound
+from astropy import units as u
 
 
 def get_sim() -> rebound.Simulation:
