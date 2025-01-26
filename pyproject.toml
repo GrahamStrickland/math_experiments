@@ -6,10 +6,13 @@ description = "Python3.13 code for mathematical experiments"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "astropy>=7.0.0",
     "isort>=5.13.2",
     "matplotlib>=3.10.0",
     "numpy>=2.2.1",
     "pytest>=8.3.4",
+    "rebound>=4.4.6",
+    "scipy>=1.15.1",
 ]
 
 [tool.pytest.ini_options]
