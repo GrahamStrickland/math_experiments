@@ -47,7 +47,9 @@ def main() -> None:
 
     # Show and save figure.
     plt.show()
-    fig.savefig(os.path.join("src", "giancoli_physics", "plots", "ch02_ex39.pdf"), dpi=300)
+    fig.savefig(
+        os.path.join("src", "giancoli_physics", "plots", "ch02_ex39.pdf"), dpi=300
+    )
 
 
 if __name__ == "__main__":

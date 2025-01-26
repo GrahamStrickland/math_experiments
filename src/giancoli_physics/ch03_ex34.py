@@ -33,7 +33,6 @@ def main() -> None:
         x(angles[i], data[i])
         y(angles[i], data[i])
 
-
     # print table of results
     print("=" * 50)
     print("Table of positions for projectile fired at 40.0m/s")
