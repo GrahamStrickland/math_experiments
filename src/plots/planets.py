@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Code from Nora's Guide to the Galaxy video at: https://www.youtube.com/watch?v=xEAhkUX7nVI
 
 import time
