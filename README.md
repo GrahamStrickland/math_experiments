@@ -2,6 +2,15 @@
 
 Python3.13 code for mathematical experiments
 
+## src/stewart_calculus
+Exercises and plots from "Calculus - Early Transcendentals" (8e) - James Stewart
+
+## src/giancoli_physics
+Exercises and plots from "Physics" (5e) - Douglas Giancoli
+
+## src/theoretical_minimum
+Exercises and plots from "The Theoretical Minimum - Vol. I: Classical Mechanics" - Leonard Susskind & George Hrabovsky
+
 ## src/shanks_bot.py
 Matt Parker's method of finding the period of the reciprocal of any prime number, 
 from the Numberphile video
