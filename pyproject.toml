@@ -9,10 +9,12 @@ dependencies = [
     "astropy>=7.0.0",
     "isort>=5.13.2",
     "matplotlib>=3.10.0",
+    "networkx>=3.4.2",
     "numpy>=2.2.1",
     "pytest>=8.3.4",
     "rebound>=4.4.6",
     "scipy>=1.15.1",
+    "sympy>=1.13.3",
 ]
 
 [tool.pytest.ini_options]

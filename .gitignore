@@ -6,3 +6,6 @@
 *.pdf
 *.png
 
+# VSCode files
+.DS_Store
+.vscode
