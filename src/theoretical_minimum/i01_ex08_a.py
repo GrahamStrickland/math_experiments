@@ -45,7 +45,6 @@ def main() -> None:
         ]
     )
 
-
     plt.show()
 
 
