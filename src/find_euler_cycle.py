@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Tucker - Applied Combinatorics 6e - Section 2.1 Ex. 20. (a)
 # Given list of vertices (V) and list of tuples representing edges (E),
 # find Euler cycle if one exists. Output in form of list with elements
