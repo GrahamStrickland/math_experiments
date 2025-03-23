@@ -33,4 +33,4 @@ Rebound code from Nora's Guide to the Galaxy - [Let's Hang Out and Simulate Plan
 
 Benchmarking of the source code from the fast inverse square root algorithm from Quake III Arena found at
 [Wikipedia](https://en.wikipedia.org/wiki/Fast_inverse_square_root) against modern floating point 
-division/square root on Apple silicon ARM64. Only tested using Clang with C99.
+division/square root on Apple silicon ARM64
