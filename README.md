@@ -1,6 +1,6 @@
 # math_experiments
 
-Python3.13 code for mathematical experiments
+Python/C code for mathematical experiments and testing language/algorithm implementations
 
 ## src/stewart_calculus
 
@@ -28,3 +28,8 @@ for the mathematics
 ## src/planets.py
 
 Rebound code from Nora's Guide to the Galaxy - [Let's Hang Out and Simulate Planets 🤓](https://www.youtube.com/watch?v=xEAhkUX7nVI&t=1s)
+
+## src/fastinvsqrt.c
+
+Comparison of the source code from John Carmack's fast inverse square root algorithm from Quake III Arena found at
+[Wikipedia](https://en.wikipedia.org/wiki/Fast_inverse_square_root) with modern floating point division/square root.
