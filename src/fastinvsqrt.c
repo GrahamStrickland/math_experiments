@@ -4,29 +4,44 @@
 #include <time.h>
 
 float Q_rsqrt(float);
+void benchmark(float);
 
 int main(int argc, char *argv[]) {
+  benchmark(4.0);
+  benchmark(2.0);
+  benchmark(0.15625);
+  benchmark(0.01);
+
+  return EXIT_SUCCESS;
+}
+
+void benchmark(float number) {
   float fastinvsqrt, invsqrt, start, elapsed;
 
+  char eqs[30] = "=====";
+  char line[31];
+  sprintf(line, "%s%s%s%s%s%s", eqs, eqs, eqs, eqs, eqs, eqs);
+  printf("%s\n", line);
+  printf("Benchmark for %.10f\n", number);
+  printf("%s\n", line);
+
   start = (float)clock() / CLOCKS_PER_SEC;
-  fastinvsqrt = Q_rsqrt(2.0);
+  fastinvsqrt = Q_rsqrt(number);
   elapsed = (float)clock() / CLOCKS_PER_SEC - start;
 
-  printf("Q_rsqrt(2.0) = %.10f\n", fastinvsqrt);
+  printf("Q_rsqrt(%.10f) = %.10f\n", number, fastinvsqrt);
   printf("Elapsed time: %.10f\n", elapsed);
 
   start = (float)clock() / CLOCKS_PER_SEC;
-  invsqrt = 1.0 / sqrt(2.0);
+  invsqrt = 1.0 / sqrt(number);
   elapsed = (float)clock() / CLOCKS_PER_SEC - start;
 
-  printf("1.0 / sqrt(2.0) = %.10f\n", invsqrt);
+  printf("1.0 / sqrt(%.10f) = %.10f\n", number, invsqrt);
   printf("Elapsed time: %.10f\n", elapsed);
 
   printf("Absolute error = %.10f\n", fabs(invsqrt - fastinvsqrt));
-  printf("Relative error = %.10f\n",
+  printf("Relative error = %.10f\n\n",
          fabs(invsqrt - fastinvsqrt) / fabs(invsqrt));
-
-  return EXIT_SUCCESS;
 }
 
 float Q_rsqrt(float number) {
