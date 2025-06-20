@@ -1,6 +1,6 @@
 # math_experiments
 
-Python/C code for mathematical experiments and testing language/algorithm implementations
+Python/Julia/C code for mathematical experiments and testing language/algorithm implementations
 
 ## src/stewart_calculus
 
