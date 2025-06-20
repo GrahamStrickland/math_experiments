@@ -1,7 +1,6 @@
-# Tests for find_euler_cycle.py
 from typing import List
 
-from ..src.find_euler_cycle import find_euler_cycle
+from . import find_euler_cycle
 
 
 def test_find_euler_cycle0():

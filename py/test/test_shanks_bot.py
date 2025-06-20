@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
 import pytest
 
-from src.shanks_bot import shanks_bot
+from . import shanks_bot
 
 
 @pytest.mark.parametrize(
