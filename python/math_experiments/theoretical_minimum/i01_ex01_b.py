@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Classical Mechanics: The Theoretical Minimum - Leonard Susskind & George Hrabovsky
-# Interlude 1: Exercise 1 (d)
+# Interlude 1: Exercise 1 (b)
 
 import os
 
@@ -11,7 +11,7 @@ from numpy import pi as pi
 
 
 def g(x: float) -> float:
-    return (np.sin(x)) ** 2 - np.cos(x)
+    return np.sin(x) - np.cos(x)
 
 
 def main() -> None:
@@ -20,7 +20,7 @@ def main() -> None:
     fig, ax = plt.subplots()
     ax.plot(x, g(x))
     ax.set_title(
-        "Theoretical Minimum: Interlude 1 - Exercise 1\nGraph of $g(x) = \\sin ^2x - \\cos x$",
+        "Theoretical Minimum: Interlude 1 - Exercise 1\nGraph of $g(x) = \\sin x - \\cos x$",
         usetex=True,
     )
     ax.set_xlabel("$x$", usetex=True)
@@ -43,7 +43,7 @@ def main() -> None:
     )
 
     plt.show()
-    fig.savefig(os.path.join("src", "plots", "tm_i01_ex01_d.pdf"), dpi=300)
+    fig.savefig(os.path.join("math_experiments", "plots", "tm_i01_ex01_b.pdf"), dpi=300)
 
 
 if __name__ == "__main__":

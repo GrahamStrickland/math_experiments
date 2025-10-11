@@ -26,7 +26,7 @@ def main() -> None:
     ax.set_ylabel("$\\theta(\\alpha)$", usetex=True)
 
     plt.show()
-    fig.savefig(os.path.join("src", "plots", "tm_i01_ex01_c.pdf"), dpi=300)
+    fig.savefig(os.path.join("math_experiments", "plots", "tm_i01_ex01_c.pdf"), dpi=300)
 
 
 if __name__ == "__main__":

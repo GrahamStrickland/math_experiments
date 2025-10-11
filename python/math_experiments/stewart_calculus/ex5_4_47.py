@@ -9,27 +9,29 @@ matplotlib.rcParams["text.usetex"] = True
 
 
 def f(x: float) -> float:
-    return np.sqrt(2 * x + 1)
+    return 1 - 2 * x - 5 * x**4
 
 
 def main() -> None:
-    x = np.linspace(0, 1, 100)
+    x = np.linspace(-1, 1)
 
     y = f(x)
 
     fig, ax = plt.subplots()
 
-    ax.plot(x, y, "b", label="$y = \\sqrt{{2x + 1}}$")
+    ax.plot(x, y, label="$y = 1 - 2x - 5x^4$")
 
-    ax.axis([0, 1, 0, 2])
-    ax.set_title("Stewart Ex. 5.5.75")
+    ax.axis([-1, 1, -6, 2])
+    ax.set_title("Stewart Ex. 5.4.47")
     ax.set_xlabel("$x$")
     ax.set_ylabel("$y$")
     ax.legend()
     ax.grid()
 
     plt.show()
-    fig.savefig(os.path.join("src", "plots", "stewart_ex5_5_75.pdf"), dpi=300)
+    fig.savefig(
+        os.path.join("math_experiments", "plots", "stewart_ex5_4_47.pdf"), dpi=300
+    )
 
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ import numpy as np
 
 
 def f(x: float) -> float:
-    return abs(np.sqrt(x + 2) - x)
+    return x * np.sin(x**2)
 
 
 def main() -> None:
@@ -18,7 +18,9 @@ def main() -> None:
     plt.plot(x, y)
 
     plt.show()
-    fig.savefig(os.path.join("src", "plots", "stewart_ex6_1_35.pdf"), dpi=300)
+    fig.savefig(
+        os.path.join("math_experiments", "plots", "stewart_ex6_1_37.pdf"), dpi=300
+    )
 
 
 if __name__ == "__main__":

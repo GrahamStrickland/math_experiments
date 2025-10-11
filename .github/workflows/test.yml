@@ -8,6 +8,8 @@ on:
 jobs:
   format:
     runs-on: macos-latest
+    defaults:
+      working-directory: py
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
@@ -30,6 +32,8 @@ jobs:
         run: uv run isort .
   test:
     runs-on: macos-latest
+    defaults:
+      working-directory: py
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4

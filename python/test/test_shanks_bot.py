@@ -1,6 +1,6 @@
 import pytest
 
-from . import shanks_bot
+from math_experiments.shanks_bot import shanks_bot
 
 
 @pytest.mark.parametrize(

@@ -1,6 +1,6 @@
 from typing import List
 
-from . import find_euler_cycle
+from math_experiments.find_euler_cycle import find_euler_cycle
 
 
 def test_find_euler_cycle0():
