@@ -8,8 +8,6 @@ on:
 jobs:
   format:
     runs-on: macos-latest
-    defaults:
-      working-directory: py
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
@@ -29,11 +27,9 @@ jobs:
       - name: Install dependencies
         run: uv python install 3.13
       - name: Sort imports with isort 
-        run: uv run isort .
+        run: uv run isort python
   test:
     runs-on: macos-latest
-    defaults:
-      working-directory: py
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
